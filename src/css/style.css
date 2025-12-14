@@ -1,0 +1,74 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none
+}
+
+
+
+.main_container_division {
+    display: flex;
+    width: 50em;
+    height: auto;
+    border: 0.3em solid grey;
+    border-radius: 1em;
+    border-color: grey;
+    padding: 1em;
+    margin: 1.5em;
+    background-color: dodgerblue;
+    flex-direction: column;
+    min-height: 40em;
+}
+
+
+.button_delete_container {
+    align-content: center;
+}
+
+.img_container {
+    display: flex;
+    align-items: center;
+}
+
+.date {
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+.imga_task {
+    width: 40px;
+}
+
+
+.button_delete_container {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    text-align: center;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    word-break: break-word;
+}
+
+
+.buttons_edit_delete {
+    height: 3rem;
+    border-radius: 1.5rem;
+    border: 1px solid #000000;
+    margin: 1px; 
+    min-width: 58.69px;
+    background-color: burlywood;
+    transition: all 0.1s ease;
+};
+
+.buttons_edit_delete:hover {
+    
+    transform: scale(0.2)
+};

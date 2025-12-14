@@ -1,0 +1,98 @@
+.input_password_register {
+    background: transparent;
+    border: none;
+    border-bottom: 0.05em solid #000000;
+    margin-bottom: 20px;
+    height: 30px;
+    font-size: 20px;
+    outline: 0px;
+    border-color: #3f3f3f;
+}
+
+.input_password_register:focus {
+    border-color: #000000;
+    border-bottom-width: 2px;
+}
+
+.form_register {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_email_register {
+    background: transparent;
+    margin-bottom: 20px;
+    height: 30px;
+    border: none;
+    border-bottom: 0.05em solid #000000;
+    border-color: #3f3f3f;
+    font-size: 20px;
+    /*con outline sacamos el borde que aparece al seleccionar el inpit*/
+    outline: 0px;
+    transition: border-bottom-width 0.05s;
+}
+
+.input_password_register:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    -webkit-text-fill-color: #000 !important; /* mantiene color del texto */
+    transition: background-color 9999s ease-in-out 0s !important; /* evita parpadeo */
+}
+
+.input_email_register:focus {
+    border-color: #000000;
+    border-bottom-width: 2px;
+}
+
+.input_email_register:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    -webkit-text-fill-color: #000 !important; /* mantiene color del texto */
+    transition: background-color 9999s ease-in-out 0s !important; /* evita parpadeo */
+}
+
+.input_password_register_repeat {
+    background: transparent;
+    margin-bottom: 20px;
+    height: 30px;
+    border: none;
+    border-bottom: 0.05em solid #000000;
+    border-color: #3f3f3f;
+    font-size: 20px;
+    /*con outline sacamos el borde que aparece al seleccionar el inpit*/
+    outline: 0px;
+    transition: border-bottom-width 0.05s;
+}
+
+.input_password_register_repeat:focus {
+    border-color: #000000;
+    border-bottom-width: 2px;
+}
+
+.input_password_register_repeat:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    -webkit-text-fill-color: #000 !important; /* mantiene color del texto */
+    transition: background-color 9999s ease-in-out 0s !important; /* evita parpadeo */
+}
+
+.input_user_register {
+    background: transparent;
+    margin-bottom: 20px;
+    height: 30px;
+    border: none;
+    border-bottom: 0.05em solid #000000;
+    border-color: #3f3f3f;
+    font-size: 20px;
+    /*con outline sacamos el borde que aparece al seleccionar el inpit*/
+    outline: 0px;
+    transition: border-bottom-width 0.05s;
+}
+
+.input_user_register:focus {
+    border-color: #000000;
+    border-bottom-width: 2px;
+}
+
+.input_user_register:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    -webkit-text-fill-color: #000 !important; /* mantiene color del texto */
+    transition: background-color 9999s ease-in-out 0s !important; /* evita parpadeo */
+}
