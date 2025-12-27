@@ -11,7 +11,7 @@ export function App() {
         <BrowserRouter>
                 
             <Routes>
-                <Route path="/login" element={<LoginController />} />
+                <Route path="/" element={<LoginController />} />
                 <Route path='home' element={<AdminRoutes>
                         <HomeReturn />
                     </AdminRoutes>}></Route>

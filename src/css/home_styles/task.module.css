@@ -1,0 +1,45 @@
+.list_task {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 5px 1px rgb(128, 128, 128);
+    border-radius: 0.5em;
+    padding: 0.3em;
+    margin-bottom: 0.3em;
+    width: 300px;
+    height: 380px;
+    box-sizing: border-box;
+    max-width: 300px;
+    transition: all 0.3s ease;
+}
+
+.list_task:hover {
+    scale: 1.02;
+    box-shadow: 1px 1px 50  px 1px rgb(128, 128, 128);
+    background-color: rgb(241, 241, 241);
+    border: 1px solid #000;
+}
+
+
+.div_container_description_date_task {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.Title_task_class {
+    font-size: 20 px;
+}
+
+.list_task_div_container {
+    width: 99%;
+    height: 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
-import "../../css/home_styles/task.css";
+import styles from "../../css/home_styles/task.module.css";
 
 export function Task({ nameTask,descriptionTask,dateTask,idTaskProp,functionDeleteTask,callTaskModal,setValuesToTaskEdit }) {
   
@@ -26,11 +26,13 @@ export function Task({ nameTask,descriptionTask,dateTask,idTaskProp,functionDele
 
   return (
     <>
-      <li className="list_task">
-        <div className="list_task_div_container">
-          <h1 className="Title_task_class">{nameTask}</h1>
-          <p>{descriptionTask}</p>
+      <li className={styles.list_task}>
+        <div className={styles.list_task_div_container}>
+          <h1 className={styles.Title_task_class}>{nameTask}</h1>
+          <div className={styles.div_container_description_date_task}>
+            <p>{descriptionTask}</p>
             <p>{dateTask}</p>
+          </div>
           <div>
             <button onClick={handler}>Editar</button>
             <button onClick={messageDeleteTask}>Borrar</button>
