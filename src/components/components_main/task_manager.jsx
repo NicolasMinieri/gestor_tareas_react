@@ -25,7 +25,7 @@ export function Taskmanager() {
     const handlerAddTask = async(e) =>{
         e.preventDefault();
         
-        const res = await fetch("http://localhost:3000/addtask",{
+        const res = await fetch("https://api-gestor-tareas-postgresql.onrender.com/addtask",{
             method:"POST",
             credentials:"include",
             body: JSON.stringify({
@@ -62,7 +62,7 @@ export function Taskmanager() {
     const deleteTask = async(e, idTaskParam) => {
         e.preventDefault();
 
-        const res = await fetch(`http://localhost:3000/taskDelete/${idTaskParam}`,{
+        const res = await fetch(`https://api-gestor-tareas-postgresql.onrender.com/taskDelete/${idTaskParam}`,{
             method: "DELETE",
             credentials: "include",
         });
@@ -89,7 +89,7 @@ export function Taskmanager() {
     }
 
     const consultAllTask = async() =>{
-        const res = await fetch("http://localhost:3000/taskConsultUpdate",{
+        const res = await fetch("https://api-gestor-tareas-postgresql.onrender.com/taskConsultUpdate",{
             method: "GET",
             credentials:"include"
         });
@@ -100,7 +100,7 @@ export function Taskmanager() {
 
     useEffect(() =>{
         const consultAllTask = async() =>{
-            const res = await fetch("http://localhost:3000/taskConsultUpdate",{
+            const res = await fetch("https://api-gestor-tareas-postgresql.onrender.com/taskConsultUpdate",{
                 method: "GET",
                 credentials:"include"
             });
