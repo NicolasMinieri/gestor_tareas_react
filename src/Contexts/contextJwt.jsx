@@ -11,7 +11,7 @@ export function AuthProvider({ children }) {
 
         async function checkFetch() {
         
-            const res = await fetch("http://localhost:3000/home",{
+            const res = await fetch("https://api-gestor-tareas-postgresql.onrender.com/home",{
                 method:"GET",
                 credentials: "include"
             })
