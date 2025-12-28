@@ -38,7 +38,7 @@ export function ModalEditTask({ tituloModal,changueVisibilityModal,idTaskToEdit,
 
     const editTask = async(e) =>{
         e.preventDefault();
-        const res = await fetch("http://localhost:3000/editTaskDates",{
+        const res = await fetch("https://api-gestor-tareas-postgresql.onrender.com/editTaskDates",{
             method:"PUT",
             credentials:"include",
             body: JSON.stringify({
