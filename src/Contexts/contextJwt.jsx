@@ -11,16 +11,22 @@ export function AuthProvider({ children }) {
     useEffect(()=>{
 
         async function checkFetch() {
-        
-            const res = await fetch("https://api-gestor-tareas-postgresql.onrender.com/home",{
-                method:"GET",
-                credentials: "include"
-            })
-
-            if (res.status == 200) {
-                changeToTrue()
-            } else if (res.status == 401) {
-                changeToFalse()
+            try {
+                const res = await fetch("https://api-gestor-tareas-postgresql.onrender.com/home",{
+                    method:"GET",
+                    credentials: "include"
+                })
+    
+                if (res.status == 200) {
+                    changeToTrue()
+                } else if (res.status == 401) {
+                    changeToFalse()
+                }
+                
+            } catch (error) {
+                changeToFalse();
+            } finally {
+                setLoading(false);
             }
 
         }
