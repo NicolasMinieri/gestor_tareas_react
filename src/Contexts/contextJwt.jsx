@@ -4,6 +4,7 @@ export const AuthContext  = createContext();
 
 export function AuthProvider({ children }) {
     const[logued, setLoged] = useState(false);
+    const [loading, setLoading] = useState(true);
     
     
 
@@ -22,7 +23,6 @@ export function AuthProvider({ children }) {
                 changeToFalse()
             }
 
-
         }
 
         checkFetch();
@@ -38,6 +38,6 @@ export function AuthProvider({ children }) {
     }
 
     return(
-        <AuthContext.Provider value={{ logued, changeToTrue, changeToFalse }}>{ children }</AuthContext.Provider>
+        <AuthContext.Provider value={{ setLoading,loading,logued, changeToTrue, changeToFalse }}>{ children }</AuthContext.Provider>
     );
 }

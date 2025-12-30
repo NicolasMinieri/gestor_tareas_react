@@ -3,8 +3,12 @@ import { AuthContext } from "../Contexts/contextJwt.jsx";
 
 export function AdminRoutes( { children } ) {
 
-    const { logued,changeToTrue,changeToFalse } = useContext(AuthContext);
+    const { loading,logued,changeToTrue,changeToFalse } = useContext(AuthContext);
 
+
+    if (loading) {
+        return <h1>Chequeando sesión...</h1>;
+    }
 
     return(
         <>
